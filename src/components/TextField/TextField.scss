@@ -1,0 +1,32 @@
+.ss_input {
+    background-color: #e5e5e5 !important;
+}
+
+.ss_input:focus {
+    background-color: #e5e5e5 !important;
+}
+
+.ss_phone {
+  width: 100% !important;
+}
+.ss_textBox {
+  /* width: 392px;
+  height: 43px; */
+  border-radius: 4px;
+  border: solid 1px #b1b1b1;
+  min-width: 290px;
+}
+
+.ss_textBox::placeholder{
+  font-weight: 100;
+}
+
+.ss-text-box-40{
+    width: 40%;
+}
+
+// @media (max-width : 992px){
+//   .ss-text-box-40{
+//      width: 100%;
+//   }
+// }

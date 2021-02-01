@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,172 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* background-color: #edeff2; */
+  background-color: #F4F4F4; 
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+
+
+/* reset bootstap css - starts */
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-control {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+/* reset bootstap css - end */
+
+/* app layout css - starts */
+.ss_app_layout_item_1 {
+  grid-area: sidebar;
+  /* background: #000; */
+  height: 100% !important;
+  /* background-color: #fafafa; */
+  width: 100%;
+}
+.ss_app_layout_item_2 {
+  grid-area: header;
+  width: 100%;
+}
+.ss_app_layout_item_3 {
+  grid-area: container;
+  width: 100%;
+}
+
+.ss_app_layout {
+  display: grid;
+  grid-template-columns: 248px 1fr;
+  /* grid-template-rows: auto; */
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar container";   
+}
+.container-fluid{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.row{
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/* @media screen and (max-width: 992px) {
+  .ss_app_layout{
+   grid-template-columns:  0% 100%;
+  }  
+
+   .ss_app_layout_item_1{
+     display: none
+  } 
+}  */
+/* app layout css - ends */
+
+/* tostify css start*/
+.Toastify__toast--success {
+  background: #64b102;
+}
+.Toastify__toast--error {
+  background: #ed0303;
+}
+
+/* tostify css end */
+
+.offline-message-container{
+  text-align: center;
+  background-color: #ed0303;
+  color: #fafafa;
+  padding: 2px 0px;
+  animation: sweepIn 0.5s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.slow-internet-message-container{
+  text-align: center;
+  background-color: #0065f2;
+  color: #fafafa;
+  padding: 2px 0px;
+  animation: sweepIn 0.5s ease-out;
+  transition: all 0.7s ease-out;
+  margin-top: 1px;
+}
+
+.port-not-forwaraded {
+  text-align: center;
+  background-color: #0065f2;
+  color: #fafafa;
+  padding: 2px 0px;
+  animation: sweepIn 0.5s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.restart-now-container {
+  text-align: center;
+  background-color: #64b102;
+  color: #fafafa;
+  padding: 2px 0px;
+  animation: sweepIn 0.5s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+@keyframes sweepIn{
+  0%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
